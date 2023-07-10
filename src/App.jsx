@@ -1,15 +1,25 @@
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 import NavBar from './components/NavBar.jsx';
-import ItemListContainer from './components/ItemListContainer.jsx';
+import Home from './pages/home'
+import ProductDetail from './pages/products-detail';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-export default function App() {
+function App() {
+
   return (
-    <>
+    <div>
+
       <NavBar nombre="Urban Diamond Beats" />
-      <ItemListContainer greeting="Tienda de Beats" />
-      <p>Beats de Trap, Drill, Rkt.</p>
-    </>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/products/:productId' element={<ProductDetail/>} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
+
+export default App

@@ -30,3 +30,68 @@
   color: rgb(116, 16, 116);
   font-weight: 700;
 }
+
+.card{
+  word-wrap: break-word;
+  padding: 1.4rem;
+  margin: 1.2rem;
+  border-radius: 10px;
+  background-color: rgb(255, 130, 210);
+  max-width: 25%;
+}
+
+.cartButttonContainer{
+  background: none;
+  border: none;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 18px 1px lightgrey;
+  scale: 1.03;
+  transition: .5s all;
+}
+
+.cardName{
+  font-size: 1.4em;
+  margin: 5px 0px 2px 0px;
+  font-weight: 700;
+}
+.cardCategory{
+  font-size: 1rem;
+}
+.cardImg{
+  width: 100%;
+}
+.cardDivFather{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.cardDescription{
+  height: 120px;
+}
+.cardPrice{
+  font-weight: 700;
+  color: rgb(82, 9, 78);
+}
+.cardAddToCart{
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.cardDetail{
+  padding: 2rem;
+}
+.backButton{
+  background: none;
+  font-size: 1rem;
+  padding: 1rem;
+  border: none;
+}
+.headerContainer{
+  display: flex;
+  align-items: center;
+}
